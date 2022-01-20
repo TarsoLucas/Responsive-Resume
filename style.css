@@ -229,3 +229,11 @@ ul{
 .ghspan{
     display: flex;
 }
+
+.contactInfo .contactList li a:link {
+    text-decoration: none;
+}
+
+.contactInfo .contactList li a:visited {
+    text-decoration: none;
+}
