@@ -205,6 +205,25 @@ ul{
     background: #c48902;
 }
 
+.ghspan{
+    display: flex;
+}
+
+.contactInfo .contactList li a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactInfo .contactList li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactInfo .contactList li a:hover{
+    color: #3d2f02;
+}
+
+
 @media (max-width: 1000px){
     .fullPage{
         margin: 10px;
@@ -224,16 +243,4 @@ ul{
     .skills .box{
         grid-template-columns: repeat(1,1fr);
     }
-}
-
-.ghspan{
-    display: flex;
-}
-
-.contactInfo .contactList li a:link {
-    text-decoration: none;
-}
-
-.contactInfo .contactList li a:visited {
-    text-decoration: none;
 }
