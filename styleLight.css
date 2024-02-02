@@ -225,7 +225,19 @@ ul{
 
 .contactInfo .contactList li a:hover{
     color: #3d2f02;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3d2f02, 0 0 40px #3d2f02, 0 0 50px #3d2f02, 0 0 60px #3d2f02, 0 0 70px #3d2f02;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #222222, 0 0 40px #222222, 0 0 50px #222222, 0 0 60px #222222, 0 0 70px #222222, 0 0 80px #222222;
+    }
+    }
 
 @media (max-width: 1000px){
     .fullPage{
