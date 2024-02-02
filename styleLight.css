@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.darkmode {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.fullPage {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    max-width: 1000px;
+    min-height: 1000px;
+    background:#fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1) ;
+}
+
+.sidebar {
+    position: relative;
+    background: linear-gradient(#af7b00, #6e5605);
+    padding: 40px;
+    color: #F5EEE1;
+}
+
+.fullPage .content{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profPic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(228, 197, 152, 0.8);
+}
+
+.profPic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text h2 {
+    font-size:1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.text h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+
+.contactEducation{
+    padding-top: 40px;
+}
+
+.div-languages{
+    padding-top: 40px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #003147;
+}
+
+.contactInfo ul li span {
+    font-weight: 300;
+}
+
+.contactEducation ul li {
+    margin-bottom:15;
+}
+
+.contactEducation h5 {
+    font-weight: 500;
+}
+
+.contactEducation h4:nth-child(2) {
+    font-weight: 500;
+}
+
+.contactEducation h4 {
+    font-weight: 300;
+}
+
+.div-languages .level-bar {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #503e04;
+    display: block;
+}
+
+.div-languages .level-bar div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #c48902;
+}
+
+.aboutMe{
+    margin-bottom: 50px;
+}
+
+.aboutMe:last-child{
+    margin-bottom: 0;
+}
+
+.content-titles{
+    color: #503e04;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.box{
+    display: flex;
+    margin: 20px 0;
+}
+
+.year-company{
+    min-width: 150px;
+}
+
+.year-company h5{
+    text-transform: uppercase;
+    color: rgba(129, 75, 3, 0.486);
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgba(129, 75, 3, 0.486);
+}
+
+.skills section .box .level-bar{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #e9deb6;
+}
+
+.skills section .box .level-bar div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #c48902;
+}
+
+.ghspan{
+    display: flex;
+}
+
+.contactInfo .contactList li a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactInfo .contactList li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactInfo .contactList li a:hover{
+    color: #3d2f02;
+}
+
+@media (max-width: 1000px){
+    .fullPage{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .aboutMe .box{
+        flex-direction: column;
+    }
+
+    .aboutMe .box .year-company{
+        margin-bottom: 5px;
+    }
+
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.l {
+    display: block;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+  }
+  
+  .l {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0.75em;
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+    color: #fdea7b;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    padding: 0.15em;
+    width: 3em;
+    height: 1.5em;
+    transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .l:before, .l:after {
+    content: "";
+    display: block;
+  }
+  
+  .l:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+  }
+  
+  .l:after {
+    background: linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+          repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+          radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 25% 50%;
+    width: 1.2em;
+    height: 1em;
+    box-sizing: border-box;
+  }
+  /* Checked */
+  .l:checked {
+    background-color: rgba(0,0,0,0.45);
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+  }
+  
+  .l:checked:before {
+    background-color: currentColor;
+    transform: translateX(125%)
+  }
+  
+  .l:checked:after {
+    border-left-color: currentColor;
+    transform: translateX(-2.5%) rotateY(180deg);
+  }
+  /* Other States */
+  .l:focus {
+      /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+    outline: 0;
+  }

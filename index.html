@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Visit my resume to know more about me and my projects!">
-    <link rel="stylesheet" href="./style.css">
+    <link id="stylesheet" rel="stylesheet" href="./styleDark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap" rel="stylesheet">
@@ -16,14 +16,31 @@
 
 <body>
     
+    <script>
+    function toggleStylesheet() {
+        var stylesheet = document.getElementById('stylesheet');
+        if (document.getElementById('style-switch').checked) {
+            console.log(stylesheet.href)
+            stylesheet.href = './styleLight.css';
+        } else {
+            stylesheet.href = './styleDark.css';
+        }
+    }
+    </script>
+
+    
     <div class="fullPage">
         <div class="sidebar">
             <div class="text">
                 <div class="profPic">
-                    <img src="./img/Dev.jpeg" alt="Profile Picture">
+                    <img src="./img/Tarso_Oliveira_Dev.jpeg" alt="Profile Picture">
                 </div>
 
                 <h2>Tarso Oliveira <br> <span>Full Stack Developer</span></h2>
+            </div>
+
+            <div class="darkmode">
+                <input id="style-switch" type="checkbox" class="l" onchange="toggleStylesheet()">
             </div>
 
             <div class="contactInfo">
@@ -203,14 +220,21 @@
                 <div class="box">
                     <h4>PHP</h4>
                     <div class="level-bar">
-                        <div style="width: 80%;"></div>
+                        <div style="width: 85%;"></div>
                     </div>
                 </div>
 
                 <div class="box">
                     <h4>NodeJs</h4>
                     <div class="level-bar">
-                        <div style="width: 80%;"></div>
+                        <div style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>Python</h4>
+                    <div class="level-bar">
+                        <div style="width: 85%;"></div>
                     </div>
                 </div>
 
@@ -267,6 +291,13 @@
                         <div style="width: 100%;"></div>
                     </div>
                 </div>
+                
+                <div5 class="box">
+                    <h4>Discipline</h4>
+                    <div class="level-bar">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div5
 
                 <div class="box">
                     <h4>Proactivity</h4>
@@ -286,13 +317,6 @@
                     <h4>Creativity</h4>
                     <div class="level-bar">
                         <div style="width: 80%;"></div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <h4>Discipline</h4>
-                    <div class="level-bar">
-                        <div style="width: 75%;"></div>
                     </div>
                 </div>
 
