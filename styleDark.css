@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    color: #aeaeae;
 }
 
 body {
-    background: #E6E6E6;
+    background: #252525;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +20,7 @@ body {
     margin: 0px;
     max-width: 1000px;
     min-height: 1000px;
-    background:#fff;
+    background:#979797;
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1) ;
@@ -27,14 +28,14 @@ body {
 
 .sidebar {
     position: relative;
-    background: linear-gradient(#af7b00, #6e5605);
+    background: linear-gradient(#960000ba, #4d0000);
     padding: 40px;
-    color: #F5EEE1;
+    color: #aeaeae;
 }
 
 .fullPage .content{
     position: relative;
-    background: #fff;
+    background: #131313;
     padding: 40px;
 }
 
@@ -53,7 +54,7 @@ body {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid rgba(228, 197, 152, 0.8);
+    border: 3px solid rgba(229, 61, 61, 0.8);
 }
 
 .profPic img {
@@ -136,7 +137,7 @@ ul{
     position: relative;
     width: 100%;
     height: 6px;
-    background: #503e04;
+    background: #c5c5c5;
     display: block;
 }
 
@@ -145,7 +146,7 @@ ul{
     top: 0;
     left: 0;
     height: 100%;
-    background: #c48902;
+    background: #a90000;
 }
 
 .aboutMe{
@@ -157,7 +158,7 @@ ul{
 }
 
 .content-titles{
-    color: #503e04;
+    color: #aeaeae;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -174,10 +175,12 @@ ul{
 
 .year-company h5{
     text-transform: uppercase;
-    color: rgba(129, 75, 3, 0.486);
+    color: #aeaeae;
 }
 
-
+p{
+    color: #fff;
+}
 
 .skills .box{
     position: relative;
@@ -187,14 +190,14 @@ ul{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color: rgba(129, 75, 3, 0.486);
+    color: rgba(150, 1, 1, 0.486);
 }
 
 .skills section .box .level-bar{
     position: relative;
     width: 100%;
     height: 10px;
-    background: #e9deb6;
+    background: #c5c5c5;
 }
 
 .skills section .box .level-bar div{
@@ -202,7 +205,7 @@ ul{
     top: 0;
     left: 0;
     height: 100%;
-    background: #c48902;
+    background: #a90000;
 }
 
 .ghspan{
@@ -220,9 +223,22 @@ ul{
 }
 
 .contactInfo .contactList li a:hover{
-    color: #3d2f02;
+    color: #ffffff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
+
+
+@-webkit-keyframes glow {
+from {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+to {
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4d4d, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+}
 
 @media (max-width: 1000px){
     .fullPage{
